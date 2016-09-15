@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="wang">
+        <attr name="hint" format="string" />
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="hintTextColor" format="color" />
+        <attr name="mastColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="hintPaddingTop" format="dimension" />
+        <attr name="angleLength" format="dimension" />
+        <attr name="angleWidth" format="dimension" />
+        <attr name="lineSpeed" format="integer" />
+    </declare-styleable>
+</resources>
