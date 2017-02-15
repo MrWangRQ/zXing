@@ -16,8 +16,9 @@
 
 package com.wang.zxinglibrary.core.qrcode.detector;
 
-
 import com.wang.zxinglibrary.core.ResultPoint;
+
+
 
 /**
  * <p>Encapsulates a finder pattern, which are the three square patterns found in

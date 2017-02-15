@@ -23,7 +23,7 @@ import com.wang.zxinglibrary.core.pdf417.PDF417Common;
  * <p>A field based on powers of a generator integer, modulo some modulus.</p>
  *
  * @author Sean Owen
- * @see com.wang.zxinglibrary.core.common.reedsolomon.GenericGF
+ * @see com.google.zxing.common.reedsolomon.GenericGF
  */
 public final class ModulusGF {
 

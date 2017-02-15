@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.maxicode.decoder;
 
-
 import com.wang.zxinglibrary.core.ChecksumException;
 import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.FormatException;

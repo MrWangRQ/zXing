@@ -17,25 +17,24 @@
 package com.wang.zxinglibrary.core.datamatrix;
 
 
-import com.wang.zxinglibrary.core.ChecksumException;
-import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.FormatException;
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.Reader;
 import com.wang.zxinglibrary.core.Result;
 import com.wang.zxinglibrary.core.ResultMetadataType;
 import com.wang.zxinglibrary.core.ResultPoint;
-import com.wang.zxinglibrary.core.common.BitMatrix;
-import com.wang.zxinglibrary.core.common.DecoderResult;
-import com.wang.zxinglibrary.core.common.DetectorResult;
 import com.wang.zxinglibrary.core.datamatrix.decoder.Decoder;
 import com.wang.zxinglibrary.core.datamatrix.detector.Detector;
 import com.wang.zxinglibrary.core.BarcodeFormat;
 import com.wang.zxinglibrary.core.BinaryBitmap;
+import com.wang.zxinglibrary.core.ChecksumException;
+import com.wang.zxinglibrary.core.DecodeHintType;
+import com.wang.zxinglibrary.core.common.BitMatrix;
+import com.wang.zxinglibrary.core.common.DecoderResult;
+import com.wang.zxinglibrary.core.common.DetectorResult;
 
 import java.util.List;
 import java.util.Map;
-
 
 /**
  * This implementation can detect and decode Data Matrix codes in an image.
@@ -99,7 +98,7 @@ public final class DataMatrixReader implements Reader {
    * around it. This is a specialized method that works exceptionally fast in this special
    * case.
    *
-   * @see com.wang.zxinglibrary.core.qrcode.QRCodeReader#extractPureBits(BitMatrix)
+   * @see com.google.zxing.qrcode.QRCodeReader#extractPureBits(BitMatrix)
    */
   private static BitMatrix extractPureBits(BitMatrix image) throws NotFoundException {
 

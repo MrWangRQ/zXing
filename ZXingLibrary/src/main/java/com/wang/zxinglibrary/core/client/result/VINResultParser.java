@@ -16,6 +16,7 @@
 
 package com.wang.zxinglibrary.core.client.result;
 
+
 import com.wang.zxinglibrary.core.BarcodeFormat;
 import com.wang.zxinglibrary.core.Result;
 

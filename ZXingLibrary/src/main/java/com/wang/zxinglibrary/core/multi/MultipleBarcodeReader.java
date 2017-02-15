@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.multi;
 
-
 import com.wang.zxinglibrary.core.BinaryBitmap;
 import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.NotFoundException;
@@ -27,7 +26,7 @@ import java.util.Map;
 /**
  * Implementation of this interface attempt to read several barcodes from one image.
  *
- * @see com.wang.zxinglibrary.core.Reader
+ * @see com.google.zxing.Reader
  * @author Sean Owen
  */
 public interface MultipleBarcodeReader {

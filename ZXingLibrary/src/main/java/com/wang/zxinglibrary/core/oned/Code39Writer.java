@@ -16,6 +16,7 @@
 
 package com.wang.zxinglibrary.core.oned;
 
+
 import com.wang.zxinglibrary.core.BarcodeFormat;
 import com.wang.zxinglibrary.core.EncodeHintType;
 import com.wang.zxinglibrary.core.WriterException;

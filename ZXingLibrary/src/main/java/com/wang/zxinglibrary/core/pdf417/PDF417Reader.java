@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.pdf417;
 
-
 import com.wang.zxinglibrary.core.BarcodeFormat;
 import com.wang.zxinglibrary.core.BinaryBitmap;
 import com.wang.zxinglibrary.core.ChecksumException;

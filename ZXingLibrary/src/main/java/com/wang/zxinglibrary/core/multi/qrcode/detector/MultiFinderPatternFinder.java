@@ -16,15 +16,14 @@
 
 package com.wang.zxinglibrary.core.multi.qrcode.detector;
 
-
+import com.wang.zxinglibrary.core.qrcode.detector.FinderPattern;
+import com.wang.zxinglibrary.core.qrcode.detector.FinderPatternFinder;
+import com.wang.zxinglibrary.core.qrcode.detector.FinderPatternInfo;
 import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.ResultPoint;
 import com.wang.zxinglibrary.core.ResultPointCallback;
 import com.wang.zxinglibrary.core.common.BitMatrix;
-import com.wang.zxinglibrary.core.qrcode.detector.FinderPattern;
-import com.wang.zxinglibrary.core.qrcode.detector.FinderPatternFinder;
-import com.wang.zxinglibrary.core.qrcode.detector.FinderPatternInfo;
 
 import java.io.Serializable;
 import java.util.ArrayList;

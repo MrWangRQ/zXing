@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.multi;
 
-
 import com.wang.zxinglibrary.core.BinaryBitmap;
 import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.NotFoundException;

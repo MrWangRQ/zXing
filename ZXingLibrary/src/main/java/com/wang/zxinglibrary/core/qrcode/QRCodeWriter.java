@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.qrcode;
 
-
 import com.wang.zxinglibrary.core.BarcodeFormat;
 import com.wang.zxinglibrary.core.EncodeHintType;
 import com.wang.zxinglibrary.core.Writer;

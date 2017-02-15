@@ -16,11 +16,11 @@
 
 package com.wang.zxinglibrary.core.oned;
 
+
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.ReaderException;
 import com.wang.zxinglibrary.core.Result;
 import com.wang.zxinglibrary.core.common.BitArray;
-
 
 final class UPCEANExtensionSupport {
 

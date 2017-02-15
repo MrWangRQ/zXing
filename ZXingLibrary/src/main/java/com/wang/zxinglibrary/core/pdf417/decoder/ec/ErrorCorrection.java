@@ -26,7 +26,7 @@ import com.wang.zxinglibrary.core.ChecksumException;
  * is quite useful in understanding the algorithm.</p>
  *
  * @author Sean Owen
- * @see com.wang.zxinglibrary.core.common.reedsolomon.ReedSolomonDecoder
+ * @see com.google.zxing.common.reedsolomon.ReedSolomonDecoder
  */
 public final class ErrorCorrection {
 

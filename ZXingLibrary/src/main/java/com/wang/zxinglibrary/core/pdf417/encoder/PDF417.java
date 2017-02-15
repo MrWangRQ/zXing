@@ -725,6 +725,7 @@ public final class PDF417 {
     if (dimension == null) {
       throw new WriterException("Unable to fit message in columns");
     }
+
     return dimension;
   }
 

@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.pdf417.decoder;
 
-
 import com.wang.zxinglibrary.core.common.detector.MathUtils;
 import com.wang.zxinglibrary.core.pdf417.PDF417Common;
 

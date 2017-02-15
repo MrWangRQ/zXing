@@ -16,11 +16,11 @@
 
 package com.wang.zxinglibrary.core.aztec.encoder;
 
-
 import com.wang.zxinglibrary.core.common.BitArray;
 
 import java.util.Deque;
 import java.util.LinkedList;
+
 
 /**
  * State represents all information about a sequence necessary to generate the current output.

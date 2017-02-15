@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.qrcode.encoder;
 
-
 import com.wang.zxinglibrary.core.qrcode.decoder.ErrorCorrectionLevel;
 import com.wang.zxinglibrary.core.qrcode.decoder.Mode;
 import com.wang.zxinglibrary.core.qrcode.decoder.Version;

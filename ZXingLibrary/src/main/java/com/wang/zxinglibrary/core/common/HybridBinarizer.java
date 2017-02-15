@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.common;
 
-
 import com.wang.zxinglibrary.core.Binarizer;
 import com.wang.zxinglibrary.core.LuminanceSource;
 import com.wang.zxinglibrary.core.NotFoundException;

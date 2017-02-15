@@ -16,8 +16,8 @@
 
 package com.wang.zxinglibrary.core.aztec.encoder;
 
-
 import com.wang.zxinglibrary.core.common.BitArray;
+
 
 final class BinaryShiftToken extends Token {
   

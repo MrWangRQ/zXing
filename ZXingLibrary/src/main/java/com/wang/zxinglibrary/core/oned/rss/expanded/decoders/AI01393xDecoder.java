@@ -25,6 +25,7 @@
  */
 package com.wang.zxinglibrary.core.oned.rss.expanded.decoders;
 
+
 import com.wang.zxinglibrary.core.FormatException;
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.common.BitArray;

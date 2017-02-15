@@ -16,16 +16,15 @@
 
 package com.wang.zxinglibrary.core.maxicode;
 
-
-import com.wang.zxinglibrary.core.BarcodeFormat;
-import com.wang.zxinglibrary.core.BinaryBitmap;
-import com.wang.zxinglibrary.core.ChecksumException;
 import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.FormatException;
 import com.wang.zxinglibrary.core.NotFoundException;
-import com.wang.zxinglibrary.core.Reader;
 import com.wang.zxinglibrary.core.Result;
 import com.wang.zxinglibrary.core.ResultMetadataType;
+import com.wang.zxinglibrary.core.BarcodeFormat;
+import com.wang.zxinglibrary.core.BinaryBitmap;
+import com.wang.zxinglibrary.core.ChecksumException;
+import com.wang.zxinglibrary.core.Reader;
 import com.wang.zxinglibrary.core.ResultPoint;
 import com.wang.zxinglibrary.core.common.BitMatrix;
 import com.wang.zxinglibrary.core.common.DecoderResult;

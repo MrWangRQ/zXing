@@ -98,21 +98,11 @@ public final class ViewfinderView extends View {
         Resources resources = getResources();
         strHint = resources.getString(R.string.scan_text);
         maskColor = 0xa5000000;
-//        resultColor = resources.getColor(R.color.result_view);
         lineColor = resources.getColor(R.color.viewfinder_laser);
-//        resultPointColor = resources.getColor(R.color.possible_result_points);
         scannerAlpha = 0;
         possibleResultPoints = new ArrayList<>(5);
-//        lastPossibleResultPoints = null;
         getAttrs(context, attrs);
     }
-//    <attr name="hint" format="string" />
-//    <attr name="hintTextSize" format="dimension" />
-//    <attr name="hintTextColor" format="color" />
-//    <attr name="mastColor" format="color" />
-//    <attr name="borderColor" format="color" />
-//    <attr name="lineColor" format="color" />
-//    <attr name="hintPaddingTop" format="dimension" />
 
     private void getAttrs(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.wang);

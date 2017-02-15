@@ -175,8 +175,9 @@ final class MatrixUtil {
       boolean bit = typeInfoBits.get(typeInfoBits.getSize() - 1 - i);
 
       // Type info bits at the left top corner. See 8.9 of JISX0510:2004 (p.46).
-      int x1 = TYPE_INFO_COORDINATES[i][0];
-      int y1 = TYPE_INFO_COORDINATES[i][1];
+      int[] coordinates = TYPE_INFO_COORDINATES[i];
+      int x1 = coordinates[0];
+      int y1 = coordinates[1];
       matrix.set(x1, y1, bit);
 
       if (i < 8) {
@@ -299,7 +300,7 @@ final class MatrixUtil {
   // The return value is 0xc94 (1100 1001 0100)
   //
   // Since all coefficients in the polynomials are 1 or 0, we can do the calculation by bit
-  // operations. We don't care if cofficients are positive or negative.
+  // operations. We don't care if coefficients are positive or negative.
   static int calculateBCHCode(int value, int poly) {
     if (poly == 0) {
       throw new IllegalArgumentException("0 polynomial");
@@ -402,21 +403,20 @@ final class MatrixUtil {
     }
   }
 
-  // Note that we cannot unify the function with embedPositionDetectionPattern() despite they are
-  // almost identical, since we cannot write a function that takes 2D arrays in different sizes in
-  // C/C++. We should live with the fact.
   private static void embedPositionAdjustmentPattern(int xStart, int yStart, ByteMatrix matrix) {
     for (int y = 0; y < 5; ++y) {
+      int[] patternY = POSITION_ADJUSTMENT_PATTERN[y];
       for (int x = 0; x < 5; ++x) {
-        matrix.set(xStart + x, yStart + y, POSITION_ADJUSTMENT_PATTERN[y][x]);
+        matrix.set(xStart + x, yStart + y, patternY[x]);
       }
     }
   }
 
   private static void embedPositionDetectionPattern(int xStart, int yStart, ByteMatrix matrix) {
     for (int y = 0; y < 7; ++y) {
+      int[] patternY = POSITION_DETECTION_PATTERN[y];
       for (int x = 0; x < 7; ++x) {
-        matrix.set(xStart + x, yStart + y, POSITION_DETECTION_PATTERN[y][x]);
+        matrix.set(xStart + x, yStart + y, patternY[x]);
       }
     }
   }
@@ -460,19 +460,15 @@ final class MatrixUtil {
     }
     int index = version.getVersionNumber() - 1;
     int[] coordinates = POSITION_ADJUSTMENT_PATTERN_COORDINATE_TABLE[index];
-    int numCoordinates = POSITION_ADJUSTMENT_PATTERN_COORDINATE_TABLE[index].length;
-    for (int i = 0; i < numCoordinates; ++i) {
-      for (int j = 0; j < numCoordinates; ++j) {
-        int y = coordinates[i];
-        int x = coordinates[j];
-        if (x == -1 || y == -1) {
-          continue;
-        }
-        // If the cell is unset, we embed the position adjustment pattern here.
-        if (isEmpty(matrix.get(x, y))) {
-          // -2 is necessary since the x/y coordinates point to the center of the pattern, not the
-          // left top corner.
-          embedPositionAdjustmentPattern(x - 2, y - 2, matrix);
+    for (int y : coordinates) {
+      if (y >= 0) {
+        for (int x : coordinates) {
+          if (x >= 0 && isEmpty(matrix.get(x, y))) {
+            // If the cell is unset, we embed the position adjustment pattern here.
+            // -2 is necessary since the x/y coordinates point to the center of the pattern, not the
+            // left top corner.
+            embedPositionAdjustmentPattern(x - 2, y - 2, matrix);
+          }
         }
       }
     }

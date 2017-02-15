@@ -250,7 +250,7 @@ final class DetectionResult {
     return barcodeMetadata.getErrorCorrectionLevel();
   }
 
-  public void setBoundingBox(BoundingBox boundingBox) {
+  void setBoundingBox(BoundingBox boundingBox) {
     this.boundingBox = boundingBox;
   }
 

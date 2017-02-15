@@ -49,7 +49,7 @@ import java.util.Collection;
  * 2016/9/13 19:11
  * Created by Mr.Wang
  */
-public abstract class CaptureActivity extends Activity implements SurfaceHolder.Callback {
+public abstract class CaptureActivity extends Activity  implements SurfaceHolder.Callback {
 
     private static final String TAG = CaptureActivity.class.getSimpleName();
 

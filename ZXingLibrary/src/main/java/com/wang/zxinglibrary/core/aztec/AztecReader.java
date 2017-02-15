@@ -16,10 +16,6 @@
 
 package com.wang.zxinglibrary.core.aztec;
 
-
-import com.wang.zxinglibrary.core.BarcodeFormat;
-import com.wang.zxinglibrary.core.BinaryBitmap;
-import com.wang.zxinglibrary.core.DecodeHintType;
 import com.wang.zxinglibrary.core.FormatException;
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.Reader;
@@ -30,9 +26,13 @@ import com.wang.zxinglibrary.core.ResultPointCallback;
 import com.wang.zxinglibrary.core.aztec.decoder.Decoder;
 import com.wang.zxinglibrary.core.aztec.detector.Detector;
 import com.wang.zxinglibrary.core.common.DecoderResult;
+import com.wang.zxinglibrary.core.BarcodeFormat;
+import com.wang.zxinglibrary.core.BinaryBitmap;
+import com.wang.zxinglibrary.core.DecodeHintType;
 
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * This implementation can detect and decode Aztec codes in an image.

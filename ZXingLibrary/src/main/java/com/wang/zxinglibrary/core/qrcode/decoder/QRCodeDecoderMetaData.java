@@ -23,7 +23,7 @@ import com.wang.zxinglibrary.core.ResultPoint;
  * Meta-data container for QR Code decoding. Instances of this class may be used to convey information back to the
  * decoding caller. Callers are expected to process this.
  * 
- * @see com.wang.zxinglibrary.core.common.DecoderResult#getOther()
+ * @see com.google.zxing.common.DecoderResult#getOther()
  */
 public final class QRCodeDecoderMetaData {
 

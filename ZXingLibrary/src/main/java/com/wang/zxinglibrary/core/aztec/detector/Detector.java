@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.aztec.detector;
 
-
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.ResultPoint;
 import com.wang.zxinglibrary.core.aztec.AztecDetectorResult;

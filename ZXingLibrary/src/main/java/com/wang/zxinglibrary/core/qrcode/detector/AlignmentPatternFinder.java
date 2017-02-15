@@ -16,7 +16,6 @@
 
 package com.wang.zxinglibrary.core.qrcode.detector;
 
-
 import com.wang.zxinglibrary.core.NotFoundException;
 import com.wang.zxinglibrary.core.ResultPointCallback;
 import com.wang.zxinglibrary.core.common.BitMatrix;

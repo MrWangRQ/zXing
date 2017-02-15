@@ -16,6 +16,7 @@
 
 package com.wang.zxinglibrary.core.maxicode.decoder;
 
+
 import com.wang.zxinglibrary.core.common.DecoderResult;
 
 import java.text.DecimalFormat;

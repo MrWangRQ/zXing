@@ -121,8 +121,8 @@ public class SymbolInfo {
 
   public static SymbolInfo lookup(int dataCodewords,
                                   SymbolShapeHint shape, 
-                                  Dimension minSize, 
-                                  Dimension maxSize,
+                                  Dimension minSize,
+                                  Dimension maxSize, 
                                   boolean fail) {
     for (SymbolInfo symbol : symbols) {
       if (shape == SymbolShapeHint.FORCE_SQUARE && symbol.rectangular) {
