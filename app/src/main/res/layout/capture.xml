@@ -18,7 +18,7 @@
     <!--<attr name="angleWidth" format="dimension" /> 四个角的宽度-->
     <!--<attr name="lineSpeed" format="integer" /> 线的移动速度-->
 
-    <com.wang.zxinglibrary.zXing.ViewfinderView
+    <com.langwing.zxinglibrary.zXing.ViewfinderView
         android:id="@+id/viewfinder_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
